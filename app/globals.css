@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-/* Fonts are loaded in layout.tsx and exposed as CSS variables */
 @theme inline {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
@@ -9,19 +8,18 @@
 
 /* Color palette — change these to restyle the whole site */
 @theme {
-  --color-page: #e9e6df;      /* background behind the cards */
-  --color-card: #fbfaf7;      /* card surface */
-  --color-paper: #ffffff;
-  --color-line: #e3ded4;      /* borders and dividers */
-  --color-ink: #1f1d1a;       /* main text */
-  --color-muted: #6e685f;     /* secondary text */
-  --color-tan: #efe6d7;       /* buttons and active nav */
-  --color-tan-edge: #ded0b8;
-  --color-tan-hover: #e8dcc8;
+  --color-bg: #0f1420;       /* page background */
+  --color-surface: #182033;  /* cards, popups, hover areas */
+  --color-line: #263049;     /* borders */
+  --color-ink: #e6eaf2;      /* headings and bright text */
+  --color-body: #98a2b8;     /* paragraph text */
+  --color-muted: #6b7489;    /* dates and small labels */
+  --color-accent: #f3c27a;   /* gold accent: tags, links, spotlight */
 }
 
 html {
   scroll-behavior: smooth;
+  color-scheme: dark;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -31,18 +29,19 @@ html {
 }
 
 body {
-  background: var(--color-page);
-  color: var(--color-ink);
+  background: var(--color-bg);
+  color: var(--color-body);
   font-family: var(--font-sans), system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
 ::selection {
-  background: var(--color-tan-edge);
+  background: var(--color-accent);
+  color: var(--color-bg);
 }
 
 :focus-visible {
-  outline: 2px solid var(--color-ink);
+  outline: 2px solid var(--color-accent);
   outline-offset: 3px;
   border-radius: 6px;
 }
