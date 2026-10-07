@@ -32,9 +32,14 @@ const about = [
   "I like work where software engineering and machine learning meet: systems that stay reliable in production and models that are measured honestly. Outside of engineering, I've led teams as a gym team lead, worked as a licensed realtor, and refereed competitive soccer, which taught me to communicate clearly and stay calm under pressure.",
 ];
 
-const skills = [
-  "Python", "Java", "C++", "C", "JavaScript", "SQL", "React", "Node.js",
-  "Spring Boot", "AWS", "Git", "Pandas", "NumPy", "Scikit-learn",
+const languages = [
+  "Python", "Java", "C++", "C", "JavaScript", "TypeScript", "SQL",
+  "HTML", "CSS", "Swift", "MATLAB",
+];
+
+const tools = [
+  "React", "Next.js", "Node.js", "Spring Boot", "Tailwind CSS", "Framer Motion",
+  "AWS", "Vercel", "Git", "Pandas", "NumPy", "Scikit-learn", "Jupyter",
 ];
 
 const experience = [
@@ -926,8 +931,10 @@ export default function Home() {
                     <p key={p}>{p}</p>
                   ))}
                 </div>
-                <p className="mt-8 text-xs font-semibold uppercase tracking-wide text-muted">Tools I use</p>
-                <Tags items={skills} />
+                <p className="mt-8 text-xs font-semibold uppercase tracking-wide text-muted">Languages</p>
+                <Tags items={languages} />
+                <p className="mt-6 text-xs font-semibold uppercase tracking-wide text-muted">Frameworks & tools</p>
+                <Tags items={tools} />
               </Reveal>
             </Section>
 
