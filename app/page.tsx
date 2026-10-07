@@ -17,7 +17,7 @@ const profile = {
   resumeUpdated: "Updated October 2026",
   email: "ammartaha99@gmail.com",
   github: "ammartaha99",
-  linkedin: "https://www.linkedin.com/in/ammartaha99/",
+  linkedin: "https://www.linkedin.com/in/ammar-taeha-263357220/",
 };
 
 const about = [
